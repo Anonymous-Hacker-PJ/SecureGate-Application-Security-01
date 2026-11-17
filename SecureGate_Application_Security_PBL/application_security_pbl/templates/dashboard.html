@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<section class="panel"><h1>Welcome, {{username}}!</h1><p>You are viewing a protected page. Only authenticated users can access this dashboard.</p><form method="post" action="/logout"><input type="hidden" name="csrf_token" value="{{csrf_token()}}"><button type="submit">Log out</button></form></section>{% endblock %}
